@@ -30,9 +30,9 @@ class Solution:
  """
  # Write your code here
  if self.top == -1:
- return True
+  return True
  else:
- return False
+  return False
 
  def is_queue_empty(self):
  """
@@ -42,9 +42,9 @@ class Solution:
  """
  # Write your code here
  if self.rear == -1 and self.front == -1:
- return True
+  return True
  else:
- return False
+  return False
 
  def is_stack_full(self):
  """
@@ -54,9 +54,9 @@ class Solution:
  """
  # Write your code here
  if self.size == len(self.stack):
- return True
+  return True
  else:
- return False
+  return False
 
  def is_queue_full(self):
  """
@@ -66,9 +66,9 @@ class Solution:
  """
  # Write your code here
  if self.size == len(self.queue):
- return True
+  return True
  else:
- return False
+  return False
 
  def push_character(self, character):
  """
@@ -78,8 +78,8 @@ class Solution:
  """
  # Write your code here
  if not self.is_stack_full():
- self.stack.append(character)
- self.top += 1
+  self.stack.append(character)
+  self.top += 1
  
  def enqueue_character(self, character):
  """
@@ -89,10 +89,10 @@ class Solution:
  """
  # Write your code here
  if not self.is_queue_full():
- self.queue.append(character)
- self.rear += 1
- if self.front == -1:
- self.front += 1
+  self.queue.append(character)
+  self.rear += 1
+  if self.front == -1:
+   self.front += 1
 
  def pop_character(self):
  """
@@ -102,9 +102,9 @@ class Solution:
  """
  # Write your code here
  if not self.is_stack_empty():
- data = self.stack.pop()
- self.top -= 1
- return data
+  data = self.stack.pop()
+  self.top -= 1
+  return data
 
  def dequeue_character(self):
  """
@@ -114,9 +114,9 @@ class Solution:
  """
  # Write your code here
  if not self.is_queue_empty():
- data = self.queue[self.front]
- self.front += 1
- return data
+  data = self.queue[self.front]
+  self.front += 1
+  return data
  
 
 
